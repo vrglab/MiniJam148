@@ -167,7 +167,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vive_Hold_Left_0: -128175477280566139
+      Vive_Hold_Left_1: 7440032564991505357
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

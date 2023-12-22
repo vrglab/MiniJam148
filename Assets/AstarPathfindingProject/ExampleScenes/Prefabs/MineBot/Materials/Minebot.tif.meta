@@ -599,7 +599,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minebot_0: 6235905728222184416
+      Minebot_1: 869114066516536548
+      Minebot_10: 3981387938363071581
+      Minebot_11: 1242698315056416904
+      Minebot_12: -4039762847010465261
+      Minebot_13: -1654549197130274844
+      Minebot_14: 6514948971980442537
+      Minebot_15: -494513459670893258
+      Minebot_16: -1120476856594907801
+      Minebot_17: -6799102635096307005
+      Minebot_18: 9207153098563848195
+      Minebot_19: -7578622564423747420
+      Minebot_2: 7007733354455177646
+      Minebot_3: 4047478315603680895
+      Minebot_4: -3498793642143397768
+      Minebot_5: -9189619303796117971
+      Minebot_6: -8639188658127328006
+      Minebot_7: -5710938769247786552
+      Minebot_8: 6562978805839974467
+      Minebot_9: -7035991474067727990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

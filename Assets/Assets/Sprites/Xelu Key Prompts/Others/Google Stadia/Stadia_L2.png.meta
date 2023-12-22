@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stadia_L2_0: -4190721821048237167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

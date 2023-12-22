@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Controller_Disconnected_0: 7797773330192229228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

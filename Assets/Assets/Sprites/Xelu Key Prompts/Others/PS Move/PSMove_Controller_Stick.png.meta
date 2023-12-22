@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PSMove_Controller_Stick_0: -4897449068310033112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

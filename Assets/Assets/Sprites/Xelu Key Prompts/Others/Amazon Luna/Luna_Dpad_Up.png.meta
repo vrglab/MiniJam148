@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Luna_Dpad_Up_0: -1989251165224701183
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

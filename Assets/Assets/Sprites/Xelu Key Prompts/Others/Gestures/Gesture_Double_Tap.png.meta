@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gesture_Double_Tap_0: -4326149528884499371
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

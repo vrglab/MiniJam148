@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vita_Circle_0: 6827716642130571840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

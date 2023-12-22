@@ -167,7 +167,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Luna_Right_Stick_Click_0: -8603171581210072233
+      Luna_Right_Stick_Click_1: 5896397827060723695
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

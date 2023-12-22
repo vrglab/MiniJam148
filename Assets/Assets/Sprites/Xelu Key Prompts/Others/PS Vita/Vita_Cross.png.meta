@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vita_Cross_0: -1609317887795493908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

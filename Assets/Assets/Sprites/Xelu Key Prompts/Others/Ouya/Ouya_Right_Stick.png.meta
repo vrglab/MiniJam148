@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ouya_Right_Stick_0: -9158056330083469624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

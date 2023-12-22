@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      upDownButtons_01_0: 3746480075465098848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

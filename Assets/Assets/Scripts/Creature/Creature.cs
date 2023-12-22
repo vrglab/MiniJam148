@@ -81,6 +81,17 @@ public abstract class Creature : MonoBehaviour
     }
 
     /// <summary>
+    /// Heal's damage based on the given damage value
+    /// </summary>
+    /// <param name="heal">The given heal value</param>
+    /// <b>Authors</b>
+    /// <br>Arad Bozorgmehr (Vrglab)</br>
+    public virtual void HealDamage(int heal)
+    {
+        CurrentHealth = (CurrentHealth + heal);
+    }
+
+    /// <summary>
     /// Calculates how hurt the creature is and give's out a percentage based on that
     /// </summary>
     /// <returns>The calculated percentage</returns>

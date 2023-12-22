@@ -181,6 +181,19 @@ public static class Utils
 
         return false;
     }
+
+    public static TownBuilding[] GetTownBuilding(this Dictionary<string, TownBuilding> town, string id)
+    {
+        List<TownBuilding> list = new List<TownBuilding>();
+        foreach (var townBuilding in town.Values)
+        {
+            if (townBuilding.ID.Contains(id))
+            {
+                list.Add(townBuilding);
+            }
+        }
+        return list.ToArray();
+    }
 }
 
 /// <summary>

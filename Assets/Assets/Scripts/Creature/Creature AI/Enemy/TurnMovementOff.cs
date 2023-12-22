@@ -14,7 +14,6 @@ public class TurnMovementOff : ActionBase
     {
         base.OnInit();
         AIpathFinder = Owner.GetComponent<AIPath>();
-
     }
 
     protected override TaskStatus OnUpdate()

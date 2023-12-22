@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stadia_Dots_0: 8118164820610880436
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

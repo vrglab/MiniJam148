@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vive_TriggerBlank_0: 8891690722841060630
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

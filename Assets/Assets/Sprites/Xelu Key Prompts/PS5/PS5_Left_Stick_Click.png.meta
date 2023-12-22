@@ -167,7 +167,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PS5_Left_Stick_Click_0: -3447189325871922067
+      PS5_Left_Stick_Click_1: 4657722825671155829
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

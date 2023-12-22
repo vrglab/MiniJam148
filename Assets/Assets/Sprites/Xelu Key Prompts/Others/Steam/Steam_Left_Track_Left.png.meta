@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Steam_Left_Track_Left_0: 9036714795499220455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

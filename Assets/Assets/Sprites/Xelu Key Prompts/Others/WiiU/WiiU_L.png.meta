@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WiiU_L_0: 296398779950666804
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vita_Dpad_Right_0: 8273163637490086032
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

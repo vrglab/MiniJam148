@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SteamDeck_Steam_0: -3593338478375515740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
