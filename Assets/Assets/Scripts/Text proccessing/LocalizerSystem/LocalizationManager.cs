@@ -19,7 +19,7 @@ public class LocalizationManager : PersistantSingleton<LocalizationManager>
     protected override void Awake()
     {
         base.Awake();
-        var ExternalLangDirectory = Environment.CurrentDirectory + "/Langs";
+        var ExternalLangDirectory = Application.streamingAssetsPath + "/Langs";
         if (!Directory.Exists(ExternalLangDirectory))
         {
             Directory.CreateDirectory(ExternalLangDirectory);
@@ -29,7 +29,11 @@ public class LocalizationManager : PersistantSingleton<LocalizationManager>
         {
             foreach (var langFile in Directory.GetFiles(ExternalLangDirectory))
             {
-                LoadLangFile(langFile);
+                FileInfo fileInfo = new FileInfo(langFile);
+                if (fileInfo.Extension == ".json")
+                {
+                    LoadLangFile(langFile);
+                }
             }
         }
 
