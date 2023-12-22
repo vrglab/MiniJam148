@@ -29,6 +29,17 @@ public class LoadingController : PersistantSingleton<LoadingController>
     }
 
     /// <summary>
+    /// Load's the given scene 
+    /// </summary>
+    /// <param name="loadScene">The given scene</param>
+    /// <b>Authors</b>
+    /// <br>Arad Bozorgmehr (Vrglab)</br>
+    public void LoadScene(string loadScene)
+    {
+        StartCoroutine(loadTheScene(loadScene));
+    }
+
+    /// <summary>
     /// This function does basically the exact same thing as <see cref="LoadTheScene(string[])"/> says
     /// </summary>
     /// <remarks>Helper function</remarks>

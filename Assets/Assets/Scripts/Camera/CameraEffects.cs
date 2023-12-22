@@ -44,7 +44,10 @@ public class CameraEffects : Instancable<CameraEffects>
 
     private void Start()
     {
-        FadeOut();
+        if (FadeObj != null)
+        {
+            FadeOut();
+        }
         ZoomToNormal();
     }
 
