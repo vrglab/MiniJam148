@@ -4,14 +4,19 @@ using UnityEngine;
 
 public abstract class TownBuilding : Creature
 {
-    public string ID { get; protected set; } = "vrglab:/Base";
+
+    public abstract string GetID();
     public abstract void TownTick(Dictionary<string, TownBuilding> town);
+    public abstract void OnBuild();
+    public abstract void OnDestroyed();
 
     public void Start()
     {
-        string id = $"{ID}:{TownHandler.Instance.RegisteredTownBuildings.Count}";
+        string id = $"{GetID()}:{TownHandler.Instance.RegisteredTownBuildings.Count}";
         TownHandler.Instance.RegisteredTownBuildings.Add(id, this);
         CurrentHealth = MaxHealth;
+        OnDeath.AddListener(OnDestroyed);
+        OnBuild();
     }
 
     public void Update()

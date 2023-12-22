@@ -5,9 +5,20 @@ using UnityEngine.UIElements;
 
 public class TownHall : TownBuilding
 {
-    public void Awake()
+
+    public override string GetID()
     {
-        ID = "vrglab:/hall";
+        return "vrglab:/hall";
+    }
+
+    public override void OnBuild()
+    {
+
+    }
+
+    public override void OnDestroyed()
+    {
+
     }
 
     public override void TownTick(Dictionary<string, TownBuilding> town)

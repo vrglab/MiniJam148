@@ -187,7 +187,7 @@ public static class Utils
         List<TownBuilding> list = new List<TownBuilding>();
         foreach (var townBuilding in town.Values)
         {
-            if (townBuilding.ID.Contains(id))
+            if (townBuilding.GetID().Contains(id))
             {
                 list.Add(townBuilding);
             }

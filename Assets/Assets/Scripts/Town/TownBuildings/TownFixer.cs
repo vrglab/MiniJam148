@@ -10,10 +10,19 @@ public class TownFixer : TownBuilding
 
     private float time;
 
-    public void Awake()
+    public override string GetID()
     {
-        ID = "vrglab:/fixer";
+        return "vrglab:/fixer";
+    }
+
+    public override void OnBuild()
+    {
         time = FixBuildingInterval;
+    }
+
+    public override void OnDestroyed()
+    {
+
     }
 
     public override void TownTick(Dictionary<string, TownBuilding> town)
