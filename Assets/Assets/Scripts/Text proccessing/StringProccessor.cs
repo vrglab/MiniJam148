@@ -16,7 +16,7 @@ using UnityEngine.UI;
 
 /// <b>Authors</b>
 /// <br>Arad Bozorgmehr (Vrglab)</br>
-public class StringProccessor : Instancable<StringProccessor>
+public class StringProccessor : Singleton<StringProccessor>
 {
     /// <summary>
     /// Basically same as <see cref="LocalizationManager.GetEntry(string)"/> We just replace the tokens inside of the text with whatever is needed

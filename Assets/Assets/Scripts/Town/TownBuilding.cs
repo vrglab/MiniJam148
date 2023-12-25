@@ -22,11 +22,19 @@ public abstract class TownBuilding : Creature
     public void Update()
     {
         base.Update();
-        TownTick(TownHandler.Instance.RegisteredTownBuildings);
+        if(!IsDead)
+        {
+            TownTick(TownHandler.Instance.RegisteredTownBuildings);
+        }
     }
 
     protected override void Movement()
     {
         
+    }
+
+    public void SelfDestruct()
+    {
+        Destroy(gameObject);
     }
 }

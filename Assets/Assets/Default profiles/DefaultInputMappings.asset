@@ -13,4 +13,22 @@ MonoBehaviour:
   m_Name: DefaultInputMappings
   m_EditorClassIdentifier: 
   RelativeIconMappings: {fileID: 11400000, guid: 0f5458a8f61ed4a4aaa7adc26245b4d9, type: 2}
-  inputData: []
+  inputData:
+  - ActionID: akt_place
+    Bindings:
+      m_Name: Bindings
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 12475779-fc5a-41bb-8505-c5ee4b5e4e50
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 28007002-23c1-4465-b898-e0b6a4143c46
+        m_Path: <Mouse>/leftButton
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Bindings
+        m_Flags: 0
+      m_Flags: 0

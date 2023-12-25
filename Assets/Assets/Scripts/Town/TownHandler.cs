@@ -20,6 +20,27 @@ public class TownHandler : Instancable<TownHandler>
             Settings.Instance.SetSetting("town_status", TownStatus.Alive);
         }
     }
+
+    private void Update()
+    {
+        TownStatus status = (TownStatus)Settings.Instance.GetSetting("town_status");
+        if ( status == TownStatus.UnderAttack)
+        {
+            int total_dead_buildings = 0;
+            foreach (var townBuilding in RegisteredTownBuildings)
+            {
+                if (townBuilding.Value.IsDead)
+                {
+                    total_dead_buildings++;
+                }
+            }
+
+            if (total_dead_buildings >= RegisteredTownBuildings.Count)
+            {
+                Settings.Instance.SetSetting("town_status", TownStatus.Destroyed);
+            }
+        }
+    }
 }
 
 public enum TownStatus

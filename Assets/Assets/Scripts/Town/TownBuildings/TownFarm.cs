@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TownFarm : TownBuilding
 {
-    [Range(0f, 100f)]
+    [Range(1f, 100f)]
     public float IncreaseResInterval = 60f;
 
     private float time;
@@ -42,7 +42,7 @@ public class TownFarm : TownBuilding
         else
         {
             int current_stored_res = (int)Settings.Instance.GetSetting("town_stored_res"), current_max_res_amt = (int)Settings.Instance.GetSetting("town_max_res_storage_amnt");
-            if ((current_stored_res + 1) < current_max_res_amt)
+            if ((current_stored_res + 1) <= current_max_res_amt)
             {
                 Settings.Instance.SetSetting("town_stored_res", current_stored_res + 1);
             }

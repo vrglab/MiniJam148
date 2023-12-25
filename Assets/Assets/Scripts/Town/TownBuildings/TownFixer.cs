@@ -33,11 +33,11 @@ public class TownFixer : TownBuilding
         }
         else
         {
-            foreach (var townHall in town.GetTownBuilding("vrglab:/hall"))
+            foreach (var townHall in town.Values)
             {
-                if (townHall.CurrentHealth < townHall.MaxHealth)
+                if (townHall.CurrentHealth < townHall.MaxHealth && !townHall.IsDead)
                 {
-                    townHall.HealDamage(1);
+                    townHall.HealDamage(10);
                     time = FixBuildingInterval;
                     return;
                 }

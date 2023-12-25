@@ -53,7 +53,7 @@ public class TMPLocalized : MonoBehaviour
     public void ResetText()
     {
         OnReset.Invoke();
-        tmp.text = StringProccessor.Instance.GetEntry(EntryId, gameObject);
+        tmp.text = StringProccessor.Instance.GetEntry<LocalizationTokenSet>(EntryId, gameObject);
         AlreadyLoaded = true;
     }
 }

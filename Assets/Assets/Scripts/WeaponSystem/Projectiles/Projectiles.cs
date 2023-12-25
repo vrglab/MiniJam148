@@ -27,7 +27,7 @@ public class Projectiles : WorldObject
     public void Shoot(Vector2 atPosition, Transform parent, Vector2 InDir, GameObject caster, UnityEvent<GameObject, GameObject> onCollision = default, UnityEvent<GameObject> onStart = default, UnityEvent<GameObject> onUpdate = default)
     {
        GameObject spawnedObj = Instantiate(ProjectileObj, parent, true);
-       spawnedObj.transform.localPosition = atPosition;
+       spawnedObj.transform.position = atPosition;
        ProjectileObjMannager mannager = spawnedObj.AddComponent<ProjectileObjMannager>();
        mannager.ParentProjectile = this;
        mannager.goingDirection = InDir;

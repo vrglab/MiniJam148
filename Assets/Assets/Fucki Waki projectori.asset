@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574d503e4207a9a47b40875fd9995c6e, type: 3}
+  m_Name: Fucki Waki projectori
+  m_EditorClassIdentifier: 
+  name: 
+  StackSize: 100
+  Image: {fileID: 2208703988740019828, guid: eefe09fde1a255d42bc50300447a862d, type: 3}
+  Speed: 200
+  impactForce: 100
+  LifeTimeInS: 3
+  DammageAmnt: 30
+  ProjectileObj: {fileID: 73170583800929500, guid: f463258647107224d87986a278b3aca0, type: 3}

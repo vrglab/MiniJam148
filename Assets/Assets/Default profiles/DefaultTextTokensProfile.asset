@@ -61,3 +61,5 @@ MonoBehaviour:
       ID: ParentComponent
     - Type: 18
       ID: EventName
+  - ID: townBuildCost
+    Arguments: []

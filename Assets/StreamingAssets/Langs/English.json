@@ -2,7 +2,23 @@
   "lang": "English",
   "entry": {
     "gm_loading": "Loading...",
-    "m_startGame": "Start Game"
+    "m_startGame": "Start Game",
+    "ui_buy": "Buy",
+    "ui_cost": "Cost: <[-{townBuildCost: }-]>",
+    "lang_german": "German",
+    "lang_english": "English",
+
+    "tbn_townhall": "Town Hall",
+    "tbn_townstorage": "Town Storage",
+    "tbn_townfarm": "Town Farm",
+    "tbn_townfixer": "Town Fixer",
+    "tbn_townfighter": "Town Fighter",
+
+    "tbn_desc_townhall": "Strong building that improves the life time of the town",
+    "tbn_desc_townstorage": "Increase's the towns \"R\" capacity by 2",
+    "tbn_desc_townfarm": "Increase's the town \"R\" by 1 on repeat",
+    "tbn_desc_townfixer": "Heals damaged building's to improve thier life time",
+    "tbn_desc_townfighter": "Shoots hostile enemies nearby"
   },
   "MultiDataEntery": {
 

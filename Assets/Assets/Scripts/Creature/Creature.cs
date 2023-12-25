@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class Creature : MonoBehaviour
+public abstract class Creature : MonoBehaviour, IProjectileInteractable
 {
     [Header("Health settings")]
     public int MaxHealth;
@@ -88,7 +88,14 @@ public abstract class Creature : MonoBehaviour
     /// <br>Arad Bozorgmehr (Vrglab)</br>
     public virtual void HealDamage(int heal)
     {
-        CurrentHealth = (CurrentHealth + heal);
+        if((CurrentHealth + heal) > MaxHealth)
+        {
+            CurrentHealth = MaxHealth;
+        }
+        else
+        {
+            CurrentHealth = (CurrentHealth + heal);
+        }
     }
 
     /// <summary>
@@ -125,5 +132,10 @@ public abstract class Creature : MonoBehaviour
             }
             IsDead = false;
         }
+    }
+
+    public void OnProjectileHit(Projectiles hitProjectile)
+    {
+        TakeDamage(hitProjectile.DammageAmnt);
     }
 }
