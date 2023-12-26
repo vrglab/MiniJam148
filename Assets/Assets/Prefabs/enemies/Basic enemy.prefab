@@ -227,6 +227,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6981727337173757342}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5345840108440317511, guid: 8a69f02b9baa44f40bb6476954d5de1d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: -80
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   aiProfile: {fileID: 11400000, guid: e4ac9f65d56462441836e55d1a4e60dc, type: 2}
 --- !u!212 &6981727337173757342
 SpriteRenderer:
@@ -372,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6981727337173757342}
   fadeSpeed: 0.05
-  fadeTimeSpeed: 1
+  fadeTimeSpeed: 0.1
   fadeWaitSpeed: 0
   OnFullyFadedOut:
     m_PersistentCalls:

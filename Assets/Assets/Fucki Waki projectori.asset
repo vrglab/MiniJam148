@@ -15,7 +15,7 @@ MonoBehaviour:
   name: 
   StackSize: 100
   Image: {fileID: 2208703988740019828, guid: eefe09fde1a255d42bc50300447a862d, type: 3}
-  Speed: 200
+  Speed: 700
   impactForce: 100
   LifeTimeInS: 3
   DammageAmnt: 30

@@ -28,7 +28,7 @@ public class spawner : MonoBehaviour
             try
             {
                 Settings.Instance.GetSetting("town_hard_mode");
-                time = 7;
+                time = 5;
             }
             catch (System.Exception)
             {

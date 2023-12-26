@@ -6,21 +6,28 @@
     "ui_buy": "Kaufen",
     "ui_cost": "Kosten: <[-{townBuildCost: }-]>",
     "lang_german": "Deutsch",
-    "lang_english": "Englisch",
-
-    "tbn_townhall": "Rathaus",
-    "tbn_townstorage": "Stadtlager",
-    "tbn_townfarm": "Stadtfarm",
-    "tbn_townfixer": "Stadtinstandsetzer",
-    "tbn_townfighter": "Stadtkämpfer",
-
-    "tbn_desc_townhall": "Starkes Gebäude, das die Lebensdauer der Stadt verbessert",
-    "tbn_desc_townstorage": "Erhöht die 'R'-Kapazität der Stadt um 2",
-    "tbn_desc_townfarm": "Erhöht das 'R' der Stadt bei Wiederholung um 1",
-    "tbn_desc_townfixer": "Repariert beschädigte Gebäude, um deren Lebensdauer zu verbessern",
-    "tbn_desc_townfighter": "Schießt auf feindliche Gegner in der Nähe"
+    "lang_english": "Englisch"
   },
-  "MultiDataEntery": {
-
+  "MultiDataEntry": {
+    "tbn_townhall": {
+      "title": "Rathaus",
+      "desc": "Starkes Gebäude, das die Lebensdauer der Stadt verbessert"
+    },
+    "tbn_townstorage": {
+      "title": "Stadtlager",
+      "desc": "Erhöht die 'R'-Kapazität der Stadt um 2"
+    },
+    "tbn_townfarm": {
+      "title": "Stadtfarm",
+      "desc": "Erhöht das 'R' der Stadt bei Wiederholung um 1"
+    },
+    "tbn_townfixer": {
+      "title": "Stadtinstandsetzer",
+      "desc": "Repariert beschädigte Gebäude, um deren Lebensdauer zu verbessern"
+    },
+    "tbn_townfighter": {
+      "title": "Stadtkämpfer",
+      "desc": "Schießt auf feindliche Gegner in der Nähe"
+    }
   }
 }

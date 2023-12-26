@@ -1308,7 +1308,6 @@ Transform:
   - {fileID: 484934279}
   - {fileID: 1978363830}
   - {fileID: 1418700259}
-  - {fileID: 1771524633}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &904231540
@@ -1756,9 +1755,17 @@ PrefabInstance:
       propertyPath: BuildingObj
       value: 
       objectReference: {fileID: 799218635281405477, guid: aad664ad4a5de204299d3c53203c598f, type: 3}
+    - target: {fileID: 5698283804945627300, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
+      propertyPath: townBuilding
+      value: 
+      objectReference: {fileID: 11400000, guid: 39453c2cc55d8724fa19d2e3e4882990, type: 2}
     - target: {fileID: 6553629502055510933, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
       propertyPath: m_Name
       value: Building panel (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553629502055510933, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2230,9 +2237,17 @@ PrefabInstance:
       propertyPath: BuildingObj
       value: 
       objectReference: {fileID: 2166847566887834958, guid: fda309d64ac684d4ab5d3d964f6762e6, type: 3}
+    - target: {fileID: 5698283804945627300, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
+      propertyPath: townBuilding
+      value: 
+      objectReference: {fileID: 11400000, guid: 34926c5c41829e2459c03bd3e6513318, type: 2}
     - target: {fileID: 6553629502055510933, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
       propertyPath: m_Name
       value: Building panel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553629502055510933, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2580,9 +2595,17 @@ PrefabInstance:
       propertyPath: BuildingObj
       value: 
       objectReference: {fileID: 9005188505103894523, guid: 83004c6c7fda01a4d98e4f0220d83aaa, type: 3}
+    - target: {fileID: 5698283804945627300, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
+      propertyPath: townBuilding
+      value: 
+      objectReference: {fileID: 11400000, guid: 1243d94361d6ab74ebd0476373558a34, type: 2}
     - target: {fileID: 6553629502055510933, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
       propertyPath: m_Name
       value: Building panel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553629502055510933, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2640,76 +2663,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1771524632
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 904231539}
-    m_Modifications:
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.1387287
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.6324664
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -21.009998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1977891683086001282, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1977891683086001282, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3735358145397981613, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-      propertyPath: m_Name
-      value: Town Fighter
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
---- !u!4 &1771524633 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1910670578198665874, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
-  m_PrefabInstance: {fileID: 1771524632}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1774119709
 GameObject:
   m_ObjectHideFlags: 0
@@ -3552,7 +3505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyList:
-  - start_when_money_reached: 3
+  - start_when_money_reached: 60
     turnOnWhenReached:
       m_PersistentCalls:
         m_Calls:
@@ -3592,7 +3545,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-  - start_when_money_reached: 25
+  - start_when_money_reached: 185
     turnOnWhenReached:
       m_PersistentCalls:
         m_Calls:
@@ -3632,7 +3585,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-  - start_when_money_reached: 45
+  - start_when_money_reached: 245
     turnOnWhenReached:
       m_PersistentCalls:
         m_Calls:
@@ -3672,7 +3625,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-  - start_when_money_reached: 65
+  - start_when_money_reached: 277
     turnOnWhenReached:
       m_PersistentCalls:
         m_Calls:
@@ -3712,7 +3665,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-  - start_when_money_reached: 85
+  - start_when_money_reached: 285
     turnOnWhenReached:
       m_PersistentCalls:
         m_Calls:
@@ -4156,9 +4109,17 @@ PrefabInstance:
       propertyPath: BuildingObj
       value: 
       objectReference: {fileID: 3735358145397981613, guid: beb9fc46e1805eb428208d7907641c5e, type: 3}
+    - target: {fileID: 5698283804945627300, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
+      propertyPath: townBuilding
+      value: 
+      objectReference: {fileID: 11400000, guid: e8074ef6200f6644db0d665a870109dd, type: 2}
     - target: {fileID: 6553629502055510933, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
       propertyPath: m_Name
       value: Building panel (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553629502055510933, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4324,6 +4285,10 @@ PrefabInstance:
       propertyPath: BuildingObj
       value: 
       objectReference: {fileID: 1595755555148030391, guid: c94ccd408c2f4b941bf8e33f62fa6de6, type: 3}
+    - target: {fileID: 5698283804945627300, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
+      propertyPath: townBuilding
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ed52087fe77aa7469813f22226229c3, type: 2}
     - target: {fileID: 6553629502055510933, guid: 8cb55e9565933e84ab26ba1ea58956d3, type: 3}
       propertyPath: m_Name
       value: Building panel
@@ -4347,11 +4312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7076611314263500466, guid: fda309d64ac684d4ab5d3d964f6762e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.61
+      value: 0.392
       objectReference: {fileID: 0}
     - target: {fileID: 7076611314263500466, guid: fda309d64ac684d4ab5d3d964f6762e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.19
+      value: 0.218
       objectReference: {fileID: 0}
     - target: {fileID: 7076611314263500466, guid: fda309d64ac684d4ab5d3d964f6762e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4412,11 +4377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3636337941237839731, guid: c94ccd408c2f4b941bf8e33f62fa6de6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0978104
+      value: -1.401
       objectReference: {fileID: 0}
     - target: {fileID: 3636337941237839731, guid: c94ccd408c2f4b941bf8e33f62fa6de6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.17454323
+      value: 0.222
       objectReference: {fileID: 0}
     - target: {fileID: 3636337941237839731, guid: c94ccd408c2f4b941bf8e33f62fa6de6, type: 3}
       propertyPath: m_LocalPosition.z

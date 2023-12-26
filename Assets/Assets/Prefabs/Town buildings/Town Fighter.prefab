@@ -131,7 +131,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.2916667, y: 2.25}
+    oldSize: {x: 1.25, y: 1.2272727}
     newSize: {x: 0.78, y: 0.74}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -216,17 +216,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26192f64c58395646b4341aaa3df80d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurentProjectile: {fileID: 11400000, guid: eee7797c52a976d4f896caef49d29c44, type: 2}
-  CurentGun: {fileID: 11400000, guid: 27e6b031db47c3340bebcacc813d8082, type: 2}
+  CurrentProjectile: {fileID: 11400000, guid: eee7797c52a976d4f896caef49d29c44, type: 2}
+  CurrentGun: {fileID: 11400000, guid: 27e6b031db47c3340bebcacc813d8082, type: 2}
+  CurrentMelee: {fileID: 0}
   GunMuzzel: {fileID: 3524321349639781177}
   ObjParents: {fileID: 1910670578198665874}
   OnProjectileShotHit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnProjectileStart:
-    m_PersistentCalls:
-      m_Calls: []
-  OnProjectileUpdate:
     m_PersistentCalls:
       m_Calls: []
 --- !u!58 &6651908592079099763

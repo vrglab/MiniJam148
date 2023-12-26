@@ -74,32 +74,16 @@ public class LocalizationManager : PersistantSingleton<LocalizationManager>
                     }
                 }
 
-                if (data.Name == "MultiDataEntery")
+                if (data.Name == "MultiDataEntry")
                 {
-                    foreach (var upgradeChildEntry in data.Children<JObject>().Properties())
+                    foreach (var dataEntry in data.Children<JObject>().Properties())
                     {
-                        var id = upgradeChildEntry.Name;
-                        var name = "";
-                        var description = "";
-
-
-                        foreach (var uceChildrendData in JObject.Parse(upgradeChildEntry.Value.ToString()).Properties())
-                        {
-                            if (uceChildrendData.Name == "name")
-                            {
-                                name = uceChildrendData.Value.ToString();
-                            }
-
-                            if (uceChildrendData.Name == "description")
-                            {
-                                description = uceChildrendData.Value.ToString();
-                            }
-                        }
+                        var id = dataEntry.Name;
 
                         enteryList.Add(new LangData()
                         {
                             Id = id,
-                            MultiDataLang = new MultiDataLanguageEntry(name, description)
+                            MultiDataLang = JObject.Parse(dataEntry.Value.ToString())
                         });
                     }
                 }
@@ -149,7 +133,7 @@ public class LocalizationManager : PersistantSingleton<LocalizationManager>
     /// <returns>Th found entry</returns>
     /// <b>Authors</b>
     /// <br>Arad Bozorgmehr (Vrglab)</br>
-    public MultiDataLanguageEntry GetMultiDataEntry(string id)
+    public JObject GetMultiDataEntry(string id)
     {
         try
         {
@@ -166,7 +150,7 @@ public class LocalizationManager : PersistantSingleton<LocalizationManager>
 
         }
 
-        return new MultiDataLanguageEntry(id.ToUpper());
+        return JObject.Parse($"{{ \"id\": \"{id.ToUpper()}\"}}");
     }
 
     /// <summary>
@@ -234,30 +218,11 @@ public class LocalizationManager : PersistantSingleton<LocalizationManager>
     }
 
     [Serializable]
-    public struct MultiDataLanguageEntry
-    {
-        public string name;
-        public string description;
-
-        public MultiDataLanguageEntry(string name, string description)
-        {
-            this.name = name;
-            this.description = description;
-        }
-
-        public MultiDataLanguageEntry(string data)
-        {
-            name = data;
-            description = data;
-        }
-    }
-
-    [Serializable]
     public struct LangData
     {
         public string Id;
         public LanguageEntry langEntery;
-        public MultiDataLanguageEntry MultiDataLang;
+        public JObject MultiDataLang;
     }
 }
 

@@ -102,6 +102,7 @@ public class ProjectileObjMannager : MonoBehaviour
                 }
                 StartCoroutine(SelfDestructSafely());
                 hit = true;
+                RGbody.velocity = Vector3.zero;
             }
             else
             {

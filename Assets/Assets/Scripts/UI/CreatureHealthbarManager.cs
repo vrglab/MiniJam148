@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class creatureHealthbarManager : MonoBehaviour
+public class CreatureHealthbarManager : MonoBehaviour
 {
     private Creature creature;
     private Slider bar;

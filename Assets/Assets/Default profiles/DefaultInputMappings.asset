@@ -31,4 +31,12 @@ MonoBehaviour:
         m_Groups: 
         m_Action: Bindings
         m_Flags: 0
+      - m_Name: 
+        m_Id: 17b6f5c9-b837-4344-ae2d-3c4068cc5e74
+        m_Path: <Touchscreen>/Press
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Bindings
+        m_Flags: 0
       m_Flags: 0

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7562229837616484314}
   - component: {fileID: 107800356082511603}
   - component: {fileID: 3531743474206416735}
-  - component: {fileID: 2861508226842984033}
   m_Layer: 5
   m_Name: Cost txt
   m_TagString: Untagged
@@ -137,23 +136,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2861508226842984033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239196504557538643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1042b6efeb7d0c248afa5c90a8a32e5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadOnStart: 1
-  EntryId: ui_cost
-  OnReset:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &2537506977399385680
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,9 +147,8 @@ GameObject:
   - component: {fileID: 4529337278500698877}
   - component: {fileID: 8868328720234743136}
   - component: {fileID: 8448935723381262849}
-  - component: {fileID: 4957552775600773511}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291,23 +272,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4957552775600773511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2537506977399385680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1042b6efeb7d0c248afa5c90a8a32e5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadOnStart: 1
-  EntryId: 
-  OnReset:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &3094512358674330596
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,9 +416,8 @@ GameObject:
   - component: {fileID: 7126804645458582512}
   - component: {fileID: 4385371553633260764}
   - component: {fileID: 2859570251179868896}
-  - component: {fileID: 4945141895352246054}
   m_Layer: 5
-  m_Name: building name text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -578,23 +541,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4945141895352246054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5208158692216251197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1042b6efeb7d0c248afa5c90a8a32e5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadOnStart: 1
-  EntryId: 
-  OnReset:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &6553629502055510933
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,9 +573,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7126804645458582512}
+  - {fileID: 4529337278500698877}
   - {fileID: 168117220029598907}
   - {fileID: 7562229837616484314}
-  - {fileID: 4529337278500698877}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -687,10 +633,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d696ac7df63def3468dcb570cfa987ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  R_Cost: 0
-  M_Cost: 0
-  BuildingObj: {fileID: 0}
+  townBuilding: {fileID: 0}
   BuyButton: {fileID: 6106987058221628324}
+  TitleText: {fileID: 2859570251179868896}
+  DescriptionText: {fileID: 8448935723381262849}
+  CostText: {fileID: 3531743474206416735}
 --- !u!1 &8902298879810954644
 GameObject:
   m_ObjectHideFlags: 0

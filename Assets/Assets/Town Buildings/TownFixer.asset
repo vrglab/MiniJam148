@@ -9,16 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aadc89241b7b294f94f55948cc13741, type: 3}
-  m_Name: Fucki waki
+  m_Script: {fileID: 11500000, guid: 29e8e4bb92b6b6d4b94c21d703214d41, type: 3}
+  m_Name: TownFixer
   m_EditorClassIdentifier: 
-  name: fucki waki
-  StackSize: 100
-  Image: {fileID: 0}
-  ShootingIntervalInS: 0.7
-  fireDelayIntervall: 1
-  shakedata:
-    Magnitued: 0
-    Duration: 0
-  MaxAmmo: 100
-  AmmoUseAmntPerShot: 1
+  LocalizationID: tbn_townfixer
+  R_Cost: 7
+  M_Cost: 4
+  BuildingObj: {fileID: 799218635281405477, guid: aad664ad4a5de204299d3c53203c598f, type: 3}

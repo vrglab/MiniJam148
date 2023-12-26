@@ -28,7 +28,7 @@ public class TownFighter : TownBuilding
        {
             if(!target.IsDead)
             {
-                weaponManager.Shoot(target.transform, true);
+                weaponManager.Shoot(target.transform, true, true);
             } 
             else
             {

@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 250822566290334133}
   - component: {fileID: 6493417226096486435}
   - component: {fileID: 3932875023514309744}
-  - component: {fileID: 5915107628770950932}
+  - component: {fileID: -8019045711769149454}
   m_Layer: 6
   m_Name: creature Healthbarr
   m_TagString: Untagged
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 34
   m_PresetInfoIsWorld: 1
---- !u!114 &5915107628770950932
+--- !u!114 &-8019045711769149454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -1,3 +1,4 @@
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -84,15 +85,103 @@ public class StringProccessor : Singleton<StringProccessor>
         return TokenParser.Instance.ReplaceTokens(text, data);
     }
 
+
+    /// <summary>
+    /// Basically same as <see cref="LocalizationManager.GetMultiDataEntry(string)"/> We just replace the tokens inside of the text with whatever is needed
+    /// </summary>
+    /// <typeparam name="t">The class containing Token definitions like a .cpp in c++</typeparam>
+    /// <b>Authors</b>
+    /// <br>Arad Bozorgmehr (Vrglab)</br>
+    public JObject GetMultiDataEntry<t>(string textId, object caller = default) where t : DefaultTokenFunctionalityHandlers
+    {
+        JObject entryObj = LocalizationManager.Instance.GetMultiDataEntry(textId);
+
+        StringBuilder builder = new StringBuilder();
+
+        builder.Append("{");
+
+        foreach (var text in entryObj.Properties())
+        {
+            List<Token> tokens = TokenParser.Instance.Parse(text.Value.ToString());
+
+            List<string> data = new List<string>();
+
+            Type type = typeof(t);
+
+            foreach (var token in tokens)
+            {
+                bool methodFound = false;
+                foreach (var method in type.GetMethods())
+                {
+                    if (method.Name.Equals(token.ID) && (method.GetParameters().Length - 1) == token.Arguments.Count)
+                    {
+                        List<object> arguments = new List<object>();
+
+                        foreach (var argument in token.Arguments)
+                        {
+                            switch (argument.Type)
+                            {
+                                case Types.Object:
+                                    arguments.Add(argument.value);
+                                    break;
+                                case Types.String:
+                                    arguments.Add(argument.value.ToString());
+                                    break;
+                                case Types.Boolean:
+                                    arguments.Add(Boolean.Parse(argument.value));
+                                    break;
+                                case Types.Int:
+                                    arguments.Add(int.Parse(argument.value));
+                                    break;
+                                case Types.Float:
+                                    arguments.Add(float.Parse(argument.value));
+                                    break;
+                                case Types.Byte:
+                                    arguments.Add(byte.Parse(argument.value));
+                                    break;
+                            }
+                        }
+
+                        arguments.Add(caller);
+
+                        var get = method.Invoke(null, arguments.ToArray());
+
+                        data.Add(get.ToString());
+                        methodFound = true;
+                    }
+                }
+                if (!methodFound)
+                {
+                    data.Add("");
+                }
+            }
+            builder.Append($"\"{text.Name}\": \"{TokenParser.Instance.ReplaceTokens(text.Value.ToString(), data)}\", ");
+        }
+
+        builder.Remove(builder.Length - 2, 2);
+        builder.Append("}");
+
+        return JObject.Parse(builder.ToString());
+    }
+
     /// <summary>
     /// Basically same as <see cref="LocalizationManager.GetEntry(string)"/> We just replace the tokens inside of the text with whatever is needed
     /// </summary>
-    /// <typeparam name="t">The class containing Token definitions like a .cpp in c++</typeparam>
     /// <b>Authors</b>
     /// <br>Arad Bozorgmehr (Vrglab)</br>
     public string GetEntry(string textId, object caller = default)
     {
         return GetEntry<DefaultTokenFunctionalityHandlers>(textId, caller);
+    }
+
+    /// <summary>
+    /// Basically same as <see cref="LocalizationManager.GetMultiDataEntry(string)"/> We just replace the tokens inside of the text with whatever is needed
+    /// </summary>
+    /// <b>Authors</b>
+    /// <br>Arad Bozorgmehr (Vrglab)</br>
+    public JObject GetMultiDataEntry(string textId, object caller = default)
+    {
+        return GetMultiDataEntry<DefaultTokenFunctionalityHandlers>(textId, caller);
     }
 }
 
