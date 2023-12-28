@@ -7,11 +7,30 @@ public class Enemy : AICreature
 
     public bool AlreadyTargeted { get; set; }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private bool inContact;
+
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<TownBuilding>())
         {
-            collision.gameObject.GetComponent<TownBuilding>().TakeDamage(20);
+            inContact = true;
+        }
+    }
+
+    public void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<TownBuilding>())
+        {
+            inContact = false;
+        }
+    }
+
+    public void Update()
+    {
+        base.Update();
+        if (inContact)
+        {
+            GetComponent<WeaponManager>().AttackMelee();
         }
     }
 
@@ -20,24 +39,8 @@ public class Enemy : AICreature
         Destroy(gameObject);
     }
 
-    private void Update()
+    public override void OnClicked()
     {
-        base.Update();
-
-        if(InputManager.Instance.GetKeyDown("akt_place"))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            // Perform the raycast
-            RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
-
-            if (hit.collider != null)
-            {
-               if (hit.collider.gameObject == gameObject)
-               {
-                    TakeDamage(5);
-               }
-            }
-        }
+        TakeDamage(5);
     }
 }

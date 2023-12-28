@@ -28,6 +28,10 @@
     "tbn_townfighter": {
       "title": "Stadtkämpfer",
       "desc": "Schießt auf feindliche Gegner in der Nähe"
+    },
+    "tbn_townarmoury": {
+      "title": "Stadtrüstkammer",
+      "desc": "Erhöht die Munitionsmenge von Stadtkämpfern, die ihre Munition verbraucht haben."
     }
   }
 }

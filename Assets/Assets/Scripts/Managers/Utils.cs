@@ -182,14 +182,14 @@ public static class Utils
         return false;
     }
 
-    public static TownBuilding[] GetTownBuilding(this Dictionary<string, TownBuilding> town, string id)
+    public static t[] GetTownBuilding<t>(this Dictionary<string, TownBuilding> town, string id) where t : TownBuilding
     {
-        List<TownBuilding> list = new List<TownBuilding>();
+        List<t> list = new List<t>();
         foreach (var townBuilding in town.Values)
         {
             if (townBuilding.GetID().Contains(id))
             {
-                list.Add(townBuilding);
+                list.Add((t)townBuilding);
             }
         }
         return list.ToArray();

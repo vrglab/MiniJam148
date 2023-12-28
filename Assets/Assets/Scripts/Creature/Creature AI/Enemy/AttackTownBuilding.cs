@@ -29,7 +29,14 @@ public class AttackTownBuilding : ActionBase
 
     protected override TaskStatus OnUpdate()
     {
-        AIpathFinder.destination = target.transform.position;
+        try
+        {
+            AIpathFinder.destination = target.transform.position;
+        }
+        catch (System.Exception)
+        {
+            target = TownHandler.Instance.RegisteredTownBuildings.Values.ToArray()[Random.Range(0, TownHandler.Instance.RegisteredTownBuildings.Count + 1)];
+        }
         return TaskStatus.Success;
     }
 }

@@ -9,16 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aadc89241b7b294f94f55948cc13741, type: 3}
-  m_Name: Fucki waki
+  m_Script: {fileID: 11500000, guid: 29e8e4bb92b6b6d4b94c21d703214d41, type: 3}
+  m_Name: TownArmoury
   m_EditorClassIdentifier: 
-  name: fucki waki
-  StackSize: 100
-  Image: {fileID: 0}
-  ShootingIntervalInS: 0.7
-  fireDelayIntervall: 1
-  shakedata:
-    Magnitued: 0
-    Duration: 0
-  MaxAmmo: 300
-  AmmoUseAmntPerShot: 1
+  LocalizationID: tbn_townarmoury
+  R_Cost: 2
+  M_Cost: 2
+  BuildingObj: {fileID: 9005188505103894523, guid: f2c0911aa045e9d42bf2870fd7c8b8e2, type: 3}

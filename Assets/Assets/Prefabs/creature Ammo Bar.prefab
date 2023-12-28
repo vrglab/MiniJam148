@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: -0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4069121780234700801
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.0018689969, g: 0.03234157, b: 0.3962264, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -143,8 +143,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 1.16, y: 0}
-  m_SizeDelta: {x: -2.33, y: 0}
+  m_AnchoredPosition: {x: 0.633, y: 0}
+  m_SizeDelta: {x: -1.275, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6430183220928712836
 GameObject:
@@ -180,8 +180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.5032, y: 0}
-  m_SizeDelta: {x: 3.0036, y: 0}
+  m_AnchoredPosition: {x: -0.75073, y: 0.109999895}
+  m_SizeDelta: {x: 1.5018, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8636782676913916219
 CanvasRenderer:
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.022819996, a: 1}
+  m_Color: {r: 0, g: 0.08543205, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -232,9 +232,9 @@ GameObject:
   - component: {fileID: 250822566290334133}
   - component: {fileID: 6493417226096486435}
   - component: {fileID: 3932875023514309744}
-  - component: {fileID: -8019045711769149454}
+  - component: {fileID: 8505474270847407949}
   m_Layer: 6
-  m_Name: creature Healthbarr
+  m_Name: creature Ammo Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 34
   m_PresetInfoIsWorld: 0
---- !u!114 &-8019045711769149454
+--- !u!114 &8505474270847407949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6468325167456062844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b75fb4ba7bdd786418befe0a260928f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 71647a1a8c49d6f458e7429a79cef8ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7598786609634283746
@@ -354,7 +354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000011921, y: -0.14}
+  m_AnchoredPosition: {x: 7.4576e-10, y: -0.133}
   m_SizeDelta: {x: 26.7337, y: 15.0261}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9145100612061060819
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 3799514542028440885}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: -0
   m_MaxValue: 100
   m_WholeNumbers: 1
   m_Value: 100

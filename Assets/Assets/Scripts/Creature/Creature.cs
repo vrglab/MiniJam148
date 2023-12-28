@@ -37,6 +37,22 @@ public abstract class Creature : MonoBehaviour, IProjectileInteractable
         if (!IsDead)
         {
             Movement();
+
+            if (InputManager.Instance.GetKeyDown("akt_interact"))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                // Perform the raycast
+                RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
+
+                if (hit.collider != null)
+                {
+                    if (hit.collider.gameObject == gameObject)
+                    {
+                        OnClicked();
+                    }
+                }
+            }
         }
 
         if (HealthPercentage() <= LowHealthPercentage)
@@ -132,6 +148,11 @@ public abstract class Creature : MonoBehaviour, IProjectileInteractable
             }
             IsDead = false;
         }
+    }
+
+    public virtual void OnClicked()
+    {
+
     }
 
     public void OnProjectileHit(Projectiles hitProjectile)

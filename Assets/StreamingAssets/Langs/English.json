@@ -28,6 +28,10 @@
     "tbn_townfighter": {
       "title": "Town Fighter",
       "desc": "Shoots hostile enemies nearby"
+    },
+    "tbn_townarmoury": {
+      "title": "Town Armoury",
+      "desc": "Increases the Ammo amount of Town Fighters who have used thier ammo"
     }
   }
 }

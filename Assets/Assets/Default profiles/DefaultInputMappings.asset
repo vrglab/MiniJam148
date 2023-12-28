@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RelativeIconMappings: {fileID: 11400000, guid: 0f5458a8f61ed4a4aaa7adc26245b4d9, type: 2}
   inputData:
-  - ActionID: akt_place
+  - ActionID: akt_interact
     Bindings:
       m_Name: Bindings
       m_Type: 0

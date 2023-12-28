@@ -11,6 +11,8 @@ public class HitBox : MonoBehaviour
 
     private Transform playerPosition;
 
+    private GameObject caster;
+
     public bool finished;
     private void Start()
     {
@@ -26,6 +28,7 @@ public class HitBox : MonoBehaviour
         {
 
         }
+        gameObject.AddComponent<Rigidbody2D>().isKinematic = true;
     }
     private void Update()
     {
@@ -55,9 +58,14 @@ public class HitBox : MonoBehaviour
         this.melee = melee;
     }
 
+    public void SetCaster(GameObject caster)
+    {
+        this.caster = caster;
+    }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.GetComponent<Creature>() && !finished)
+        if(collision.gameObject.GetComponent<Creature>() && !finished && collision.gameObject != caster && collision.gameObject.tag != caster.tag)
         {
             collision.gameObject.GetComponent<Creature>().TakeDamage(melee.damageAmnt);
             finished = true;

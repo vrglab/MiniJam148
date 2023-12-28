@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 [CreateAssetMenu(menuName = "Weapons/Melee")]
 public class Melee : WorldObject
@@ -10,13 +12,15 @@ public class Melee : WorldObject
     public float distance;
     public Sprite HitboxImage;
 
-    public void ExecuteAttack(GameObject hitBox, int damageAmnt, Transform startPosition)
+    public void ExecuteAttack(GameObject hitBox, int damageAmnt, Transform startPosition, GameObject caster)
     {
         var hit = GameObject.Instantiate(hitBox, startPosition.position, Quaternion.identity);
         hit.GetComponent<HitBox>().SetPlayerPosition(startPosition);
         hit.GetComponent<HitBox>().SetMelee(this);
         hit.GetComponent<HitBox>().SetColliderType(HitboxImage);
-        hit.AddComponent<SpriteRenderer>().sprite = GetImage();
+        hit.GetComponent<HitBox>().SetCaster(caster);
+        hit.AddComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        hit.GetComponent<SpriteRenderer>().sprite = GetImage();
     }
 
     public override void OnUse(params object[] args)
@@ -78,7 +82,7 @@ public class MeleeHandler
     {
         if (CanAttack)
         {
-            _CurrentMelee.ExecuteAttack(hitBox, damageAmnt, startPoint);
+            _CurrentMelee.ExecuteAttack(hitBox, damageAmnt, startPoint, gameObject);
             attackDelayIntervall = md.attackDelayIntervall;
             CanAttack = false;
         }
@@ -96,6 +100,7 @@ public class MeleeHandler
         hitBox.transform.position = new Vector3(05069, 2023, 1517);
         hitBox.AddComponent<PolygonCollider2D>();
         hitBox.AddComponent<HitBox>();
+        gameObject.GetComponent<Creature>().OnDeath.AddListener(() => { MonoBehaviour.Destroy(hitBox); });
     }
 
     public Melee GetMeleeWeapon()

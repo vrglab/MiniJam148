@@ -14,7 +14,7 @@ public class BuildingPlacer : MonoBehaviour
     public void Update()
     {
         transform.position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 1);
-        if(InputManager.Instance.GetKeyDown("akt_place"))
+        if(InputManager.Instance.GetKeyDown("akt_interact"))
         {
             Instantiate(objToPlace, transform.position, Quaternion.identity, null);
             Destroy(gameObject);

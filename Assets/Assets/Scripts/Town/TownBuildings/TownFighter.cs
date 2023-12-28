@@ -5,7 +5,7 @@ using UnityEngine;
 public class TownFighter : TownBuilding
 {
     private Enemy target;
-    private WeaponManager weaponManager;
+    public WeaponManager weaponManager { get; private set; }
 
     public override string GetID()
     {
@@ -28,7 +28,7 @@ public class TownFighter : TownBuilding
        {
             if(!target.IsDead)
             {
-                weaponManager.Shoot(target.transform, true, true);
+                weaponManager.Shoot(target.transform, true);
             } 
             else
             {

@@ -45,7 +45,7 @@ public class GunHandler
     private Gun _CurentGun;
     private bool CanShoot = true, isAttack = false;
     private float ShootInterval, MultipleShotAmount;
-    public int CurrentAmmoAmnt;
+    private int CurrentAmmoAmnt;
 
     //p_WeaponMannager; variables
     private Transform GunMuzzel, ObjParents, transform;
@@ -59,6 +59,16 @@ public class GunHandler
         this.transform = transform;
         OnProjectileShotHit = onProjectileShotHit;
         this.gameObject = gameObject;
+    }
+
+    public int GetMaxAmmo()
+    {
+        return gd.maxAmmo;
+    }
+
+    public int GetCurrentAmmo()
+    {
+        return CurrentAmmoAmnt;
     }
 
     public string getAmmoString()
